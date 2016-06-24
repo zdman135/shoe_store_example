@@ -7,7 +7,7 @@ Feature: Submit email for reminder
   Scenario Outline: Ability to submit email reminders
     Given I am on the shoe store site
     When I add an "<email>" reminder
-    Then I will see a success notification with my email "<email>"
+    Then I will see a success notification with my "<email>" displayed
 
     Examples:
       | email              |
