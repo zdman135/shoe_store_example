@@ -1,0 +1,15 @@
+.idea/
+.DS_Store
+
+rspec_results.xml
+*.html
+*.stderr
+*.stdout
+
+*.log
+
+.rvmrc
+
+rerun.txt
+
+*.xml

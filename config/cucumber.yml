@@ -1,0 +1,14 @@
+<%
+std_opts = "--format #{ENV['CUCUMBER_FORMAT'] || 'pretty'}  -r features/ "
+require 'bundler/setup'
+tagged_out = "--tags ~@wip --tags ~@dashboard_setup --tags ~@defect --tags ~@manual "
+rerun_out = "--format rerun --out rerun.txt"
+firefox_tag = "--tags @firefox_plugin_install"
+jenkins = "--tags @Jenkins"
+%>
+
+default: <%= std_opts %> <%= tagged_out %> features
+rerun: <%= std_opts %> @rerun.txt
+
+all: <% std_opts %> features
+manual: <% std_opts %> --tags @manual

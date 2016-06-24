@@ -1,0 +1,9 @@
+---
+browser: firefox
+driver: watir_webdriver
+switches: "%w[]"
+hub_url: http://localhost:9000/wd/hub
+ie_version: <% "#{ENV['IE_VERSION']}" %>
+firefox_version:  <% "#{ENV['FIREFOX_VERSION']}" %>
+chrome_version:  <% "#{ENV['CHROME_VERSION']}" %>
+browser_platform:  <% "#{ENV['BROWSER_PLATFORM']}" %>
