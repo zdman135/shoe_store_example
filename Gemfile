@@ -34,3 +34,5 @@ gem 'autotest-growl'
 gem 'rspec_junit_formatter'
 
 gem 'net-ssh'
+
+gem 'webdrivers'
