@@ -5,6 +5,7 @@ gem 'rspec'
 gem 'yarjuf'
 gem 'taza'
 gem 'watir-webdriver'
+gem 'watir'
 gem 'factory_girl'
 gem 'faker'
 gem 'pry'
@@ -27,7 +28,7 @@ gem 'os'
 
 ## continuous testing stuff
 gem 'autotest'
-gem 'autotest-fsevent'
+gem 'autotest-fsevent', git: 'https://github.com/svoop/autotest-fsevent.git'
 gem 'autotest-growl'
 
 ## continuous service testing

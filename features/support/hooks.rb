@@ -7,7 +7,9 @@ Before do
     @dashboard.browser.execute_script('localStorage.clear();')
     @dashboard.browser.execute_script('sessionStorage.clear();')
   else
-    @dashboard.browser.execute_script('window.localStorage.clear();')
+    # chrome security setting now prevents this on default
+    # if using change this setting
+    # @dashboard.browser.execute_script('window.localStorage.clear();')
   end
 
   if ENV['BROWSER'] == 'chrome'
